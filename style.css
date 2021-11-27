@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #eee;
+  font-family: "Roboto", sans-serif;
+}
+
+.user-container {
+  width: max-content;
+  background-color: #fff;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* All cards container */
+.user-cards {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+/* Single Card */
+.user-card {
+  width: 180px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+
+}
+
+.add-user__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 15px;
+}
+.add-user__image i:active {
+  transform: scale(1.2);
+}
+
+.user-card img {
+  width: 100%;
+}
+.user-card__info {
+  padding: 10px;
+}
+.user-card__subinfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.user-card__subinfo i {
+  margin-top: 5px;
+}
+
+/* Form control */
+#form {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: none;
+}
+.show {
+  display: block!important;
+}
+
+.form-control {
+  margin: 10px 0;
+}
+
+.form-control input {
+  padding: 8px 15px;
+  width: 100%;
+}
+
+.form-control input:focus{
+  outline: none;
+}
+
+.form-control button {
+  width: 100%;
+  padding: 8px 15px;
+  font-weight: 700;
+  background-color: transparent;
+  border: 1px solid #eee;
+}
+
+.errorMessage {
+  text-align: center;
+  color: red;
+}
